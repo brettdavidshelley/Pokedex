@@ -1,0 +1,3 @@
+python detection.py --source 0 #for web cam
+python detection.py --source data/images/image.jpg
+python detection.py --source data/videos/video.mp4
