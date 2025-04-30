@@ -47,12 +47,6 @@ Gotta identify 'em all! This project turns your Raspberry Pi 4B (or local machin
 ## Problems
 - libcamera doesn't work with cv2 without extensive work arounds.
 
-# Report
-## Overview
-This Pokédex AI project transforms a Raspberry Pi 4B or compatible system into a standalone, voice equipped Pokémon identifier. Inspired by the classic Pokémon anime, it leverages computer vision and text-to-speech synthesis to emulate the behavior of a real Pokédex. The core functionality includes recognizing Generation 1 Pokémon using live image input and audibly announcing their names and database information. The system is designed to run offline, using lightweight models for fast inference and open-source libraries for accessibility and reproducibility.
-
-This project was created with the goal of integrating multiple disciplines—machine learning, embedded systems, and computer vision—into a unified, interactive system. It functions both as an educational demonstration and a proof-of-concept for embedded AI applications.
-
 ## Project Components and Roles
 1. YOLOv11n (Object Detection): 
 The YOLOv11n model is responsible for detecting Pokémon within images. It is the lightweight YOLOv11 model intended for small devices such as a Raspberry Pi. It is trained using labeled data and fine-tuned to recognize approximately 150 Pokémon from 9,568 Generation 1 Pokémon pictures. The model is later exported in ONNX format for lightweight, device-friendly inference.
@@ -128,8 +122,3 @@ Replace the snapshot workaround with a true video stream integration, potentiall
 
 6. Voice Customization: 
 Explore creating a custom voice model using Bark or similar libraries for a more authentic Pokédex-like voice, especially since offline support remains a priority.
-
-
-# Circuit Diagram
-![image-alt](https://github.gatech.edu/bshelley7/Pokedex/blob/main/components/diagram.png?raw=true)
-
